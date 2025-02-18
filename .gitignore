@@ -1,0 +1,10 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+_book/
+*.Rproj
+/.quarto/
+.DS_Store
+*_cache/
+*_files/
