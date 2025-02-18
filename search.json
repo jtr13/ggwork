@@ -8,5 +8,15 @@
     "crumbs": [
       "Introduction"
     ]
+  },
+  {
+    "objectID": "timeseries.html",
+    "href": "timeseries.html",
+    "title": "1  Time Series",
+    "section": "",
+    "text": "library(tidyverse)\nlibrary(packageRank)\n\nError in library(packageRank): there is no package called 'packageRank'\n\ntop_packages &lt;- c(\"ggrepel\", \"cowplot\",\"ggpubr\", \"ggsci\", \"ggsignif\", \"patchwork\", \"ggmap\")\n\ntime_series &lt;- function(pkg) {\n  cranDownloads(packages = pkg, to = 2025)$cranlogs.data\n}\n\nallpackages &lt;- map_dfr(top_packages, time_series)\n\nError in `map()`:\nℹ In index: 1.\nCaused by error in `cranDownloads()`:\n! could not find function \"cranDownloads\"\n\n\n\nggplot(allpackages, aes(x = date, y = count, color = package)) + \n  geom_smooth(se = FALSE, linewidth = .75)\n\nError: object 'allpackages' not found",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Time Series</span>"
+    ]
   }
 ]
