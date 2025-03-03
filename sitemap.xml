@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://[ACCOUNT NAME].github.io/[REPO NAME]/timeseries.html</loc>
-    <lastmod>2025-03-01T12:25:54.058Z</lastmod>
+    <loc>https://jtr13.github.io/ggwork/timeseries.html</loc>
+    <lastmod>2025-03-03T18:45:53.077Z</lastmod>
   </url>
   <url>
-    <loc>https://[ACCOUNT NAME].github.io/[REPO NAME]/chapter1.html</loc>
-    <lastmod>2025-03-01T12:25:54.057Z</lastmod>
-  </url>
-  <url>
-    <loc>https://[ACCOUNT NAME].github.io/[REPO NAME]/chapter2.html</loc>
-    <lastmod>2025-03-01T12:25:54.057Z</lastmod>
-  </url>
-  <url>
-    <loc>https://[ACCOUNT NAME].github.io/[REPO NAME]/chapter3.html</loc>
-    <lastmod>2025-03-01T12:25:54.057Z</lastmod>
+    <loc>https://jtr13.github.io/ggwork/tidyverse_gallery_scrape.html</loc>
+    <lastmod>2025-03-03T18:45:53.077Z</lastmod>
   </url>
 </urlset>

@@ -1,1 +1,1 @@
-Sitemap: https://[ACCOUNT NAME].github.io/[REPO NAME]/sitemap.xml
+Sitemap: https://jtr13.github.io/ggwork/sitemap.xml
