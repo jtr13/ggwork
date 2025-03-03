@@ -1,11 +1,4 @@
----
-title: "cd_plots"
-format:
-  html:
-    embed-resources: true
----
-
-## Plots to Visualize Download Trends
+# Plots to Visualize Download Trends
 
 The following code creates various plots that allow us to visualize different trends over time in the cran download counts of ggplot2 packages.
 
