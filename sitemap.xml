@@ -2,10 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://jtr13.github.io/ggwork/timeseries.html</loc>
-    <lastmod>2025-03-03T18:47:03.117Z</lastmod>
+    <lastmod>2025-03-03T18:58:23.615Z</lastmod>
   </url>
   <url>
     <loc>https://jtr13.github.io/ggwork/tidyverse_gallery_scrape.html</loc>
-    <lastmod>2025-03-03T18:47:03.116Z</lastmod>
+    <lastmod>2025-03-03T18:58:23.615Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jtr13.github.io/ggwork/cran_scrape.html</loc>
+    <lastmod>2025-03-03T18:58:23.600Z</lastmod>
   </url>
 </urlset>
