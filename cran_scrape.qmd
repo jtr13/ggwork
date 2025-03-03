@@ -1,13 +1,6 @@
----
-title: "cran_scrape"
-format:
-  html:
-    embed-resources: true
----
+# CRAN Packages Webpage
 
 The following code is designed to scrape the names of packages in the ggplot environment from the CRAN page (https://cran.r-project.org/web/packages/available_packages_by_name.html) to then retrieve the cumulative historical cran download count for each.
-
-## CRAN Packages Webpage
 
 First import the necessary packages:
 

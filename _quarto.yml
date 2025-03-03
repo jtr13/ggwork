@@ -15,6 +15,7 @@ book:
     - chapter1.qmd
     - chapter2.qmd
     - chapter3.qmd
+    - cran_scrape.qmd
 
 format:
   html:
