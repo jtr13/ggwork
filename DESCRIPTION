@@ -21,4 +21,7 @@ Imports:
     patchwork,
     rmarkdown,
     tidyverse,
-    packageRank
+    packageRank,
+    rvest,
+    plotly,
+    lubridate
