@@ -13,6 +13,8 @@ book:
     - index.qmd
     - timeseries.qmd
     - tidyverse_gallery_scrape.qmd
+    - cran_scrape.qmd
+    
 format:
   html:
     theme: [default, style/graphs.scss]
