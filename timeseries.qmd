@@ -6,11 +6,8 @@ library(packageRank)
 
 top_packages <- c("ggrepel", "cowplot","ggpubr", "ggsci", "ggsignif", "patchwork", "ggmap")
 
-time_series <- function(pkg) {
-  cranDownloads(packages = pkg, to = 2025)$cranlogs.data
-}
-
-allpackages <- map_dfr(top_packages, time_series)
+allpackages <- map_dfr(top_packages,
+  ~cranDownloads(packages = .x, to = 2025)$cranlogs.data)
 ```
 
 
