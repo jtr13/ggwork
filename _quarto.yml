@@ -5,17 +5,14 @@ book:
   title: "TITLE"
   author: "AUTHOR"
   date: today
-  site-url: https://[ACCOUNT NAME].github.io/[REPO NAME]
-  repo-url: https://github.com/[ACCOUNT NAME]/[REPO NAME]
+  site-url: https://jtr13.github.io/ggwork
+  repo-url: https://github.com/jtr13/ggwork
   repo-branch: main
   repo-actions: [source, edit, issue]
   chapters:
     - index.qmd
     - timeseries.qmd
-    - chapter1.qmd
-    - chapter2.qmd
-    - chapter3.qmd
-
+    - tidyverse_gallery_scrape.qmd
 format:
   html:
     theme: [default, style/graphs.scss]
