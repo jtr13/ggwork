@@ -22,4 +22,6 @@ Imports:
     rmarkdown,
     tidyverse,
     packageRank,
-    rvest
+    rvest,
+    plotly,
+    lubridate
