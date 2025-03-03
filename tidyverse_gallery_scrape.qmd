@@ -35,9 +35,10 @@ get_total_downloads <- function(pkg, date) {
   cd <- cranDownloads(packages = pkg, to = 2025) 
   
   #retrieving the 'cumulative' value of a particular date gets total download    count up to that date
-  cd$cranlogs.data$cumulative [ 
+  count <- cd$cranlogs.data$cumulative [ 
     cd$cranlogs.data$date == date 
   ]
+  data.frame(package_name = pkg, cumulative_count = count)
 }
 ```
 
