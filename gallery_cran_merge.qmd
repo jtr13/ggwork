@@ -1,11 +1,4 @@
----
-title: "gallery_cran_merge"
-format:
-  html:
-    embed-resources: true
----
-
-## Merge tidyverse gallery and cran page packages
+# Merge tidyverse gallery and cran page packages
 
 Read in and merge the data on ggplot packages from the gallery and from the cran webpage to store in a new dataframe, packages.
 
