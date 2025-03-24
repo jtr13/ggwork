@@ -309,65 +309,55 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>all_ggplot_packages <span class="ot">&lt;-</span> <span class="fu">c</span>(ggplot_package_names, add_gg_names)</span>
 <span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>all_ggplot_desc <span class="ot">&lt;-</span> <span class="fu">c</span>(ggplot_descriptions, add_gg_desc)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>The below function get_total_downloads takes in a package name and a date parameter to retrieve a cumulative count of that package’s cran downloads up until that date by utilizing the cranDownloads function of packageRank.</p>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>get_total_downloads <span class="ot">&lt;-</span> <span class="cf">function</span>(pkg, date) {</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="co">#to = 2025 pulls entire download history</span></span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  cd <span class="ot">&lt;-</span> <span class="fu">cranDownloads</span>(<span class="at">packages =</span> pkg, <span class="at">to =</span> <span class="dv">2025</span>)</span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>  <span class="co">#retrieving the 'cumulative' value of a particular date gets total download count up      to that date</span></span>
-<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>  cd<span class="sc">$</span>cranlogs.data<span class="sc">$</span>cumulative [ </span>
-<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>    cd<span class="sc">$</span>cranlogs.data<span class="sc">$</span>date <span class="sc">==</span> date</span>
-<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>  ]</span>
-<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
 <p>To find the most current total historical download count, set a target_date of two days before today. Depending on the time of day, cranDownloads is updated to either 1 or 2 days previous to the current day.</p>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>target_date <span class="ot">&lt;-</span> <span class="fu">Sys.Date</span>()<span class="sc">-</span><span class="dv">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>target_date <span class="ot">&lt;-</span> <span class="fu">Sys.Date</span>()<span class="sc">-</span><span class="dv">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>Retrieve historic cran download count for each package by looping across package names and store in a new vector called downloads_count. Directly passing in a vector of package names into cranDownloads function does not work properly. Will take a few minutes to complete.</p>
+<p>The below function get_total_downloads takes in a package name to retrieve a cumulative count of that package’s cran downloads up until the set target_date by utilizing the cranDownloads funcion of packageRank. Handles error that arises when package is not found on CRAN. Returned as dataframe.</p>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>downloads_count <span class="ot">&lt;-</span> <span class="fu">numeric</span>(<span class="fu">length</span>(all_ggplot_packages))</span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="co">#cranDownloads sometimes will throw an error that terminates the loop if not handled properly</span></span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">seq_along</span>(all_ggplot_packages)) {</span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>  dc <span class="ot">&lt;-</span> <span class="fu">tryCatch</span>(</span>
-<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">get_total_downloads</span>(all_ggplot_packages[i], target_date),</span>
-<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>    <span class="co">#if the package is not found in cran return NA</span></span>
-<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">error =</span> <span class="cf">function</span>(e) <span class="cn">NA</span></span>
-<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>  downloads_count[i] <span class="ot">&lt;-</span> <span class="fu">ifelse</span>(<span class="fu">length</span>(dc) <span class="sc">==</span> <span class="dv">0</span>, <span class="cn">NA</span>, dc)</span>
-<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>get_total_downloads <span class="ot">&lt;-</span> <span class="cf">function</span>(pkg) {</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="co">#to = 2025 pulls entire download history</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>  cd <span class="ot">&lt;-</span> <span class="fu">tryCatch</span>(</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">cranDownloads</span>(<span class="at">packages =</span> pkg, <span class="at">to =</span> <span class="dv">2025</span>),</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>    <span class="co">#if the package is not found in cran return NA</span></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">error =</span> <span class="cf">function</span>(e) <span class="cn">NA</span></span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>  <span class="co">#retrieving the 'cumulative' value of a particular date gets total download count up      to that date</span></span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>  count <span class="ot">&lt;-</span> <span class="fu">ifelse</span>(<span class="fu">length</span>(cd) <span class="sc">==</span> <span class="dv">1</span>, <span class="cn">NA</span>, cd<span class="sc">$</span>cranlogs.data<span class="sc">$</span>cumulative [ </span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>    cd<span class="sc">$</span>cranlogs.data<span class="sc">$</span>date <span class="sc">==</span> target_date</span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>  ])</span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">data.frame</span>(<span class="at">package =</span> pkg, <span class="at">downloads =</span> count)</span>
+<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Retrieve historic cran download count for each package by mapping get_total_downloads across scraped package_names and combining returned dataframes in one df. Will take a few minutes to complete.</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>cran_packages <span class="ot">&lt;-</span> <span class="fu">map_dfr</span>(all_ggplot_packages, get_total_downloads)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Store data in new dataframe with a column indicating CRAN page as the source and export as csv file.</p>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>cran_packages <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">package =</span> all_ggplot_packages, <span class="at">description =</span> all_ggplot_desc, <span class="at">downloads =</span> downloads_count, <span class="at">CRAN =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(cran_packages)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>cran_packages<span class="sc">$</span>description <span class="ot">=</span> all_ggplot_desc</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>cran_packages<span class="sc">$</span>CRAN <span class="ot">=</span> <span class="cn">TRUE</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(cran_packages)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>      package
-1      gg.gap
-2        gg1d
-3     ggalign
-4   ggaligner
-5 ggalignment
-6     ggallin
-                                                           description
-1                              Define Segments in y-Axis for 'ggplot2'
-2       Exploratory Data Analysis using Tiled One-Dimensional Graphics
-3                  A 'ggplot2' Extension for Consistent Axis Alignment
-4 Visualizing Sequence Alignment by Generating Publication-Ready Plots
-5                                   Plots 'D&amp;D'-Style Alignment Charts
-6                                      Grab Bag of 'ggplot2' Functions
-  downloads CRAN
-1     42131 TRUE
-2       750 TRUE
-3      4490 TRUE
-4      3437 TRUE
-5      9809 TRUE
-6     35077 TRUE</code></pre>
+<pre><code>      package downloads
+1      gg.gap     42131
+2        gg1d       750
+3     ggalign      4490
+4   ggaligner      3437
+5 ggalignment      9809
+6     ggallin     35077
+                                                           description CRAN
+1                              Define Segments in y-Axis for 'ggplot2' TRUE
+2       Exploratory Data Analysis using Tiled One-Dimensional Graphics TRUE
+3                  A 'ggplot2' Extension for Consistent Axis Alignment TRUE
+4 Visualizing Sequence Alignment by Generating Publication-Ready Plots TRUE
+5                                   Plots 'D&amp;D'-Style Alignment Charts TRUE
+6                                      Grab Bag of 'ggplot2' Functions TRUE</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(cran_packages, <span class="st">"generated_data/cran_packages.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
