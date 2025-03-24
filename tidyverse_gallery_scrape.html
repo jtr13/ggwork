@@ -169,8 +169,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./gallery_cran_merge.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Merge tidyverse gallery and cran page packages</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./cd_plots.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Plots to Visualize Download Trends</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Plots to Visualize Download Trends</span></span></a>
   </div>
 </li>
     </ul>
@@ -266,12 +272,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(gallery_packages)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   package stars downloads gallery
-1 ggQQunif     8     23408    TRUE
-2  ggupset   354    152225    TRUE
-3     xmrr     7     25028    TRUE
-4    ggpcp     1      6505    TRUE
+1 ggQQunif     8     23427    TRUE
+2  ggupset   354    152449    TRUE
+3     xmrr     7     25066    TRUE
+4    ggpcp     1      6526    TRUE
 5     gg3D   104        NA    TRUE
-6     ggQC    46     62544    TRUE</code></pre>
+6     ggQC    46     62594    TRUE</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(gallery_packages, <span class="st">"generated_data/gallery_packages.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
