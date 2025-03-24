@@ -14,6 +14,7 @@ book:
     - timeseries.qmd
     - tidyverse_gallery_scrape.qmd
     - cran_scrape.qmd
+    - gallery_cran_merge.qmd
     - cd_plots.qmd
     
 format:
@@ -36,7 +37,6 @@ execute:
   warning: false
   message: false
   error: true
-  cache: true
 
 editor: source
 
