@@ -125,48 +125,45 @@ all_ggplot_packages <- c(ggplot_package_names, add_gg_names)
 all_ggplot_desc <- c(ggplot_descriptions, add_gg_desc)
 ```
 
-The below function get_total_downloads takes in a package name and a date parameter to retrieve a cumulative count of that package's cran downloads up until that date by utilizing the cranDownloads function of packageRank.
-
-```{r}
-get_total_downloads <- function(pkg, date) {
-  
-  #to = 2025 pulls entire download history
-  cd <- cranDownloads(packages = pkg, to = 2025)
-  
-  #retrieving the 'cumulative' value of a particular date gets total download count up      to that date
-  cd$cranlogs.data$cumulative [ 
-    cd$cranlogs.data$date == date
-  ]
-}
-```
-
 To find the most current total historical download count, set a target_date of two days before today. Depending on the time of day, cranDownloads is updated to either 1 or 2 days previous to the current day.
 
 ```{r}
 target_date <- Sys.Date()-2
 ```
 
-Retrieve historic cran download count for each package by looping across package names and store in a new vector called downloads_count. Directly passing in a vector of package names into cranDownloads function does not work properly. Will take a few minutes to complete.
+The below function get_total_downloads takes in a package name to retrieve a cumulative count of that package's cran downloads up until the set target_date by utilizing the cranDownloads funcion of packageRank. Handles error that arises when package is not found on CRAN. Returned as dataframe.
 
 ```{r}
-downloads_count <- numeric(length(all_ggplot_packages))
-
-#cranDownloads sometimes will throw an error that terminates the loop if not handled properly
-for (i in seq_along(all_ggplot_packages)) {
-  dc <- tryCatch(
-    get_total_downloads(all_ggplot_packages[i], target_date),
+get_total_downloads <- function(pkg) {
+  
+  #to = 2025 pulls entire download history
+  cd <- tryCatch(
+    cranDownloads(packages = pkg, to = 2025),
     
     #if the package is not found in cran return NA
     error = function(e) NA
   )
-  downloads_count[i] <- ifelse(length(dc) == 0, NA, dc)
+  
+  #retrieving the 'cumulative' value of a particular date gets total download count up      to that date
+  count <- ifelse(length(cd) == 1, NA, cd$cranlogs.data$cumulative [ 
+    cd$cranlogs.data$date == target_date
+  ])
+  
+  data.frame(package = pkg, downloads = count)
 }
+```
+
+Retrieve historic cran download count for each package by mapping get_total_downloads across scraped package_names and combining returned dataframes in one df. Will take a few minutes to complete.
+
+```{r}
+cran_packages <- map_dfr(all_ggplot_packages, get_total_downloads)
 ```
 
 Store data in new dataframe with a column indicating CRAN page as the source and export as csv file.
 
 ```{r}
-cran_packages <- data.frame(package = all_ggplot_packages, description = all_ggplot_desc, downloads = downloads_count, CRAN = TRUE)
+cran_packages$description = all_ggplot_desc
+cran_packages$CRAN = TRUE
 
 head(cran_packages)
 write_csv(cran_packages, "generated_data/cran_packages.csv")
