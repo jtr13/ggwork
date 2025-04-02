@@ -164,7 +164,6 @@ Store data in new dataframe with a column indicating CRAN page as the source and
 ```{r}
 cran_packages$description = all_ggplot_desc
 cran_packages$CRAN = TRUE
-cran_packages$gallery = FALSE
 
 head(cran_packages)
 
@@ -179,19 +178,19 @@ write_lines(c(timestamp, data_lines), "generated_data/cran_packages.csv")
 Read in and merge the data on ggplot packages from the gallery and from the cran webpage to store in a new dataframe, packages.
 
 ```{r}
-library(tidyverse)
-
 gallery_packages <- read_csv("generated_data/gallery_packages.csv", skip = 1)
 
 cran_packages <- read_csv("generated_data/cran_packages.csv", skip = 1)
 
-packages <- full_join(gallery_packages, cran_packages, by = c("package", "downloads", "gallery", "CRAN"))
+packages <- full_join(gallery_packages, cran_packages, by = c("package", "downloads"))
 ```
 
 Sort by download count and save as all_packages with timestamp.
 
 ```{r}
 sorted_packages <- arrange(packages, desc(downloads))
+sorted_packages$CRAN <- ifelse(is.na(sorted_packages$CRAN), FALSE, sorted_packages$CRAN)
+sorted_packages$gallery <- ifelse(is.na(sorted_packages$gallery), FALSE, sorted_packages$gallery)
 
 head(sorted_packages)
 

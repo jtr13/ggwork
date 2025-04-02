@@ -76,7 +76,6 @@ Store data in a new dataframe with a column indicating gallery as the source and
 
 ```{r}
 gallery_packages$gallery = TRUE
-gallery_packages$CRAN = FALSE
 
 head(gallery_packages)
 
