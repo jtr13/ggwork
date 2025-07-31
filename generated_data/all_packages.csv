@@ -1,0 +1,327 @@
+package,downloads,stars,gallery,description,CRAN
+ggplot2,165743369,NA,NA,Create Elegant Data Visualisations Using the Grammar of Graphics,TRUE
+ggrepel,24592062,1228,TRUE,Automatically Position Non-Overlapping Text Labels with 'ggplot2',TRUE
+cowplot,19380778,712,TRUE,Streamlined Plot Theme and Plot Annotations for 'ggplot2',TRUE
+ggpubr,17105404,1154,TRUE,'ggplot2' Based Publication Ready Plots,TRUE
+ggsci,12687889,676,TRUE,Scientific Journal and Sci-Fi Themed Color Palettes for 'ggplot2',TRUE
+ggsignif,12609984,597,TRUE,Significance Brackets for 'ggplot2',TRUE
+patchwork,8760444,2504,TRUE,NA,NA
+ggmap,7375169,NA,NA,Spatial Visualization with ggplot2,TRUE
+GGally,7041337,594,TRUE,Extension to 'ggplot2',TRUE
+ggthemes,6524093,1326,TRUE,"Extra Themes, Scales and Geoms for 'ggplot2'",TRUE
+ggforce,5638507,918,TRUE,Accelerating 'ggplot2',TRUE
+ggridges,5181149,414,TRUE,Ridgeline Plots in 'ggplot2',TRUE
+tidytext,4214586,NA,NA,"Text Mining using 'dplyr', 'ggplot2', and Other Tidy Tools",TRUE
+ggraph,3866073,1083,TRUE,An Implementation of Grammar of Graphics for Graphs and Networks,TRUE
+ggtext,3583912,657,TRUE,Improved Text Rendering Support for 'ggplot2',TRUE
+hrbrthemes,3051839,1252,TRUE,"Additional Themes, Theme Components and Utilities for 'ggplot2'",TRUE
+ggfortify,3020494,528,TRUE,Data Visualization Tools for Statistical Analysis Results,TRUE
+waterfalls,2604631,NA,NA,Create Waterfall Charts using 'ggplot2' Simply,TRUE
+survminer,2553105,521,TRUE,Drawing Survival Curves using 'ggplot2',TRUE
+ggeffects,1967107,NA,NA,Create Tidy Data Frames of Marginal Effects for 'ggplot' from Model Outputs,TRUE
+ggcorrplot,1916054,189,TRUE,Visualization of a Correlation Matrix using 'ggplot2',TRUE
+ggdendro,1871774,NA,NA,Create Dendrograms and Tree Diagrams Using 'ggplot2',TRUE
+ggplotify,1776559,NA,NA,Convert Plot to 'grob' or 'ggplot' Object,TRUE
+ggfun,1697211,NA,NA,Miscellaneous Functions for 'ggplot2',TRUE
+ggstats,1621732,35,TRUE,Extension to 'ggplot2' for Plotting Stats,TRUE
+aplot,1497919,NA,NA,Decorate a 'ggplot' with Associated Information,TRUE
+ggbeeswarm,1463337,546,TRUE,Categorical Scatter (Violin Point) Plots,TRUE
+ggstance,1456339,201,TRUE,Horizontal 'ggplot2' Components,TRUE
+ggplot2movies,1345278,NA,NA,Movies Data,TRUE
+ggfittext,1332085,306,TRUE,Fit Text Inside a Box in 'ggplot2',TRUE
+ggformula,1323952,38,TRUE,Formula Interface to the Grammar of Graphics,TRUE
+gganimate,1294926,1958,TRUE,A Grammar of Animated Graphics,TRUE
+ggnewscale,1244553,410,TRUE,Multiple Fill and Colour Scales in 'ggplot2',TRUE
+treemapify,1053843,215,TRUE,Draw Treemaps in 'ggplot2',TRUE
+ggvis,963255,NA,NA,Interactive Grammar of Graphics,TRUE
+ggdist,961056,857,TRUE,Visualizations of Distributions and Uncertainty,TRUE
+ggExtra,958989,385,TRUE,"Add Marginal Histograms to 'ggplot2', and More 'ggplot2' Enhancements",TRUE
+ggiraph,901103,817,TRUE,Make 'ggplot2' Graphics Interactive,TRUE
+ggpmisc,867499,102,TRUE,Miscellaneous Extensions to 'ggplot2',TRUE
+egg,802689,NA,NA,"Extensions for 'ggplot2': Custom Geom, Custom Themes, Plot
+Alignment, Labelled Panels, Symmetric Scales, and Fixed Panel
+Size",TRUE
+see,798915,897,TRUE,Model Visualisation Toolbox for 'easystats' and 'ggplot2',TRUE
+ggalluvial,739777,506,TRUE,Alluvial Plots in 'ggplot2',TRUE
+heatmaply,721085,NA,NA,Interactive Cluster Heat Maps Using 'plotly' and 'ggplot2',TRUE
+esquisse,685409,1791,TRUE,NA,NA
+ggpp,666167,127,TRUE,Grammar Extensions to 'ggplot2',TRUE
+ggstatsplot,661223,2070,TRUE,'ggplot2' Based Plots with Statistical Details,TRUE
+ggspatial,660197,NA,NA,Spatial Data Framework for ggplot2,TRUE
+directlabels,598164,82,TRUE,NA,NA
+ggrastr,551991,220,TRUE,Rasterize Layers for 'ggplot2',TRUE
+ggalt,526263,670,TRUE,"Extra Coordinate Systems, 'Geoms', Statistical Transformations, Scales and Fonts for 'ggplot2'",TRUE
+ggimage,508513,NA,NA,Use Image in 'ggplot2',TRUE
+qqplotr,479528,51,TRUE,Quantile-Quantile Plot Extensions for 'ggplot2',TRUE
+ggh4x,406894,602,TRUE,Hacks for 'ggplot2',TRUE
+plotROC,390644,87,TRUE,NA,NA
+ggmosaic,369861,168,TRUE,Mosaic Plots in the 'ggplot2' Framework,TRUE
+ggnetwork,342579,147,TRUE,Geometries to Plot Networks with 'ggplot2',TRUE
+gghighlight,316617,NA,NA,Highlight Lines and Points in 'ggplot2',TRUE
+lemon,310433,187,TRUE,Freshing Up your 'ggplot2' Plots,TRUE
+ggside,309010,345,TRUE,Side Grammar Graphics,TRUE
+ggiraphExtra,302234,NA,NA,Make Interactive 'ggplot2'. Extension to 'ggplot2' and 'ggiraph',TRUE
+thematic,263848,NA,NA,"Unified and Automatic 'Theming' of 'ggplot2', 'lattice', and
+'base' R Graphics",TRUE
+ggtern,252444,NA,NA,"An Extension to 'ggplot2', for the Creation of Ternary Diagrams",TRUE
+ggVennDiagram,252401,NA,NA,A 'ggplot2' Implement of Venn Diagram,TRUE
+ggpattern,244697,364,TRUE,'ggplot2' Pattern Geoms,TRUE
+ggdag,235603,441,TRUE,Analyze and Create Elegant Directed Acyclic Graphs,TRUE
+ggwordcloud,226261,174,TRUE,A Word Cloud Geom for 'ggplot2',TRUE
+gggenes,222443,524,TRUE,Draw Gene Arrow Maps in 'ggplot2',TRUE
+tidyterra,219971,187,TRUE,'tidyverse' Methods and 'ggplot2' Helpers for 'terra' Objects,TRUE
+ggplot.multistats,209074,NA,NA,Multiple Summary Statistics for Binned Stats/Geometries,TRUE
+ggprism,201723,NA,NA,A 'ggplot2' Extension Inspired by 'GraphPad Prism',TRUE
+ggvenn,193006,NA,NA,Draw Venn Diagram by 'ggplot2',TRUE
+ggbreak,192752,133,TRUE,Set Axis Break for 'ggplot2',TRUE
+gghalves,188659,244,TRUE,Compose Half-Half Plots Using Your Favourite Geoms,TRUE
+ggsurvfit,184159,3,TRUE,Flexible Time-to-Event Figures,TRUE
+ggResidpanel,181775,NA,NA,Panels and Interactive Versions of Diagnostic Plots using 'ggplot2',TRUE
+ggupset,167963,354,TRUE,Combination Matrix Axis for 'ggplot2' to Create 'UpSet' Plots,TRUE
+ggpol,164721,105,TRUE,Visualizing Social Science Data with 'ggplot2',TRUE
+ggseqlogo,162960,211,TRUE,A 'ggplot2' Extension for Drawing Publication-Ready Sequence Logos,TRUE
+ggtangle,152913,NA,NA,Draw Network with Data,TRUE
+gratia,149184,NA,NA,"Graceful 'ggplot'-Based Graphics and Other Functions for GAMs
+Fitted Using 'mgcv'",TRUE
+ggThemeAssist,141672,NA,NA,Add-in to Customize 'ggplot2' Themes,TRUE
+AMR,141019,91,TRUE,NA,NA
+RcmdrPlugin.KMggplot2,135733,NA,NA,R Commander Plug-in for Data Visualization with 'ggplot2',TRUE
+ggquickeda,130839,NA,NA,Quickly Explore Your Data Using 'ggplot2' and 'table1' Summary Tables,TRUE
+geomtextpath,125802,629,TRUE,Curved Text in 'ggplot2',TRUE
+ggseas,118083,74,TRUE,'stats' for Seasonal Adjustment on the Fly with 'ggplot2',TRUE
+ggraptR,114738,NA,NA,Allows Interactive Visualization of Data Through a Web Browser GUI,TRUE
+ggeasy,111791,274,TRUE,Easy Access to 'ggplot2' Commands,TRUE
+gginnards,111422,24,TRUE,Explore the Innards of 'ggplot2' Objects,TRUE
+ggplot2.utils,107818,NA,NA,Selected Utilities Extending 'ggplot2',TRUE
+ggRandomForests,104887,NA,NA,Visually Exploring Random Forests,TRUE
+ggedit,104209,250,TRUE,Interactive 'ggplot2' Layer and Theme Aesthetic Editor,TRUE
+ggokabeito,101068,NA,NA,'Okabe-Ito' Scales for 'ggplot2' and 'ggraph',TRUE
+gge,100930,NA,NA,Genotype Plus Genotype-by-Environment Biplots,TRUE
+ggjoy,97317,NA,NA,Joyplots in 'ggplot2',TRUE
+jcolors,97030,NA,NA,"Colors Palettes for R and 'ggplot2', Additional Themes for
+'ggplot2'",TRUE
+ggpointdensity,95399,422,TRUE,A Cross Between a 2D Density Plot and a Scatter Plot,TRUE
+geofacet,94968,340,TRUE,'ggplot2' Faceting Utilities for Geographical Data,TRUE
+ComplexUpset,85367,486,TRUE,Create Complex UpSet Plots Using 'ggplot2' Components,TRUE
+ggpolypath,83256,NA,NA,Polygons with Holes for the Grammar of Graphics,TRUE
+ggplotgui,82524,NA,NA,Create Ggplots via a Graphical User Interface,TRUE
+ggdark,82478,199,TRUE,Dark Mode for 'ggplot2' Themes,TRUE
+ggparty,80931,147,TRUE,'ggplot' Visualizations for the 'partykit' Package,TRUE
+xkcd,79772,NA,NA,Plotting ggplot2 Graphics in an XKCD Style,TRUE
+ggbiplot,79653,NA,NA,A Grammar of Graphics Implementation of Biplots,TRUE
+ggspectra,73670,5,TRUE,Extensions to 'ggplot2' for Radiation Spectra,TRUE
+sugrrants,70427,82,TRUE,NA,NA
+ggstar,68107,100,TRUE,Multiple Geometric Shape Point Layer for 'ggplot2',TRUE
+ggparallel,65385,NA,NA,Variations of Parallel Coordinate Plots for Categorical Data,TRUE
+ggQC,63723,46,TRUE,Quality Control Charts for 'ggplot',TRUE
+ichimoku,62634,31,TRUE,NA,NA
+lindia,60586,104,TRUE,NA,NA
+ggplotAssist,57570,NA,NA,'RStudio' Addin for Teaching and Learning 'ggplot2',TRUE
+autoplotly,57376,88,TRUE,NA,NA
+jskm,55517,NA,NA,Kaplan-Meier Plot with 'ggplot2',TRUE
+ggfx,54892,170,TRUE,Pixel Filters for 'ggplot2' and 'grid',TRUE
+calendR,54563,255,TRUE,Ready to Print Monthly and Yearly Calendars Made with 'ggplot2',TRUE
+bdscale,52566,NA,NA,Remove Weekends and Holidays from ggplot2 Axes,TRUE
+granovaGG,50718,NA,NA,Graphical Analysis of Variance Using ggplot2,TRUE
+ggTimeSeries,49252,255,TRUE,Time Series Visualisations Using the Grammar of Graphics,TRUE
+ggpval,48895,NA,NA,Annotate Statistical Tests for 'ggplot2',TRUE
+gglm,48498,79,TRUE,Grammar of Graphics for Linear Model Diagnostic Plots,TRUE
+ggsoccer,47447,NA,NA,Plot Soccer Event Data,TRUE
+ggmuller,45759,64,TRUE,Create Muller Plots of Evolutionary Dynamics,TRUE
+ggswissmaps,45499,NA,NA,Offers Various Swiss Maps as Data Frames and 'ggplot2' Objects,TRUE
+ggPMX,45230,NA,NA,'ggplot2' Based Tool to Facilitate Diagnostic Plots for NLME Models,TRUE
+ggetho,45125,NA,NA,Visualisation of High-Throughput Behavioural (i.e. Ethomics) Data,TRUE
+ggquiver,44370,51,TRUE,Quiver Plots for 'ggplot2',TRUE
+gg.gap,44291,NA,NA,Define Segments in y-Axis for 'ggplot2',TRUE
+gggibbous,44265,NA,NA,"Moon Charts, a Pie Chart Alternative",TRUE
+GGEBiplots,42939,NA,NA,GGE Biplots with 'ggplot2',TRUE
+ggenealogy,42756,NA,NA,Visualization Tools for Genealogical Data,TRUE
+quickReg,42119,NA,NA,"Build Regression Models Quickly and Display the Results Using
+'ggplot2'",TRUE
+tvthemes,42092,140,TRUE,TV Show Themes and Color Palettes for 'ggplot2' Graphics,TRUE
+rphylopic,40512,91,TRUE,NA,NA
+ggplotlyExtra,40425,NA,NA,Extra Convenience Functions for 'Plotly',TRUE
+ggbump,40075,541,TRUE,Bump Chart and Sigmoid Curves,TRUE
+ggasym,39996,13,TRUE,NA,NA
+gapmap,39803,NA,NA,Drawing Gapped Cluster Heatmaps with 'ggplot2',TRUE
+ggseqplot,39033,14,TRUE,Render Sequence Plots using 'ggplot2',TRUE
+ggdemetra,38595,NA,NA,'ggplot2' Extension for Seasonal and Trading Day Adjustment with 'RJDemetra',TRUE
+gginference,38393,NA,NA,Visualise the Results of Inferential Statistics using 'ggplot2',TRUE
+ggcharts,38343,292,TRUE,Shorten the Distance from Data Visualization Idea to Actual Plot,TRUE
+plotluck,37588,NA,NA,"'ggplot2' Version of ""I'm Feeling Lucky!""",TRUE
+geomnet,37491,97,TRUE,NA,NA
+nord,37333,NA,NA,"Arctic Ice Studio's Nord and Group of Seven Inspired Colour
+Palettes for 'ggplot2'",TRUE
+ggrain,36847,75,TRUE,A Rainclouds Geom for 'ggplot2',TRUE
+piecepackr,36824,59,TRUE,NA,NA
+ggallin,36157,NA,NA,Grab Bag of 'ggplot2' Functions,TRUE
+ggdmc,36132,NA,NA,Cognitive Models,TRUE
+gglorenz,36075,31,TRUE,Plotting Lorenz Curve with the Blessing of 'ggplot2',TRUE
+nflplotR,35233,20,TRUE,NFL Logo Plots in 'ggplot2' and 'gt',TRUE
+ggstream,34422,NA,NA,Create Streamplots in 'ggplot2',TRUE
+aRtsy,34322,NA,NA,Generative Art with 'ggplot2',TRUE
+swimplot,33753,NA,NA,Tools for Creating Swimmers Plots using 'ggplot2',TRUE
+ggChernoff,33306,36,TRUE,Chernoff Faces for 'ggplot2',TRUE
+ggversa,32835,NA,NA,Graficas Versatiles Con 'ggplot2',TRUE
+ggOceanMaps,32536,NA,NA,Plot Data on Oceanographic Maps using 'ggplot2',TRUE
+deeptime,32315,90,TRUE,NA,NA
+ggghost,31959,NA,NA,Capture the Spirit of Your 'ggplot2' Calls,TRUE
+ggperiodic,31648,21,TRUE,Easy Plotting of Periodic Data with 'ggplot2',TRUE
+gghalfnorm,31075,NA,NA,Create a Half Normal Plot Using 'ggplot2',TRUE
+ggdensity,30705,229,TRUE,Interpretable Bivariate Density Visualization with 'ggplot2',TRUE
+contribution,30655,NA,NA,A Tiny Contribution Table Generator Based on 'ggplot2',TRUE
+ggblanket,29954,168,TRUE,Simplify 'ggplot2' Visualisation,TRUE
+ggrisk,29357,NA,NA,Risk Score Plot for Cox Regression,TRUE
+ggseg,28265,219,TRUE,Plotting Tool for Brain Atlases,TRUE
+add2ggplot,28182,NA,NA,Add to 'ggplot2',TRUE
+ggsom,27736,13,TRUE,New Data Visualisations for SOMs Networks,TRUE
+ggpage,27050,340,TRUE,Creates Page Layout Visualizations,TRUE
+ggheatmap,26763,87,TRUE,Plot Heatmap,TRUE
+ggpie,26507,48,TRUE,"Pie, Donut and Rose Pie Plots",TRUE
+ggisotonic,26201,NA,NA,'ggplot2' Friendly Isotonic or Monotonic Regression Curves,TRUE
+plothelper,25989,NA,NA,"New Plots Based on 'ggplot2' and Functions to Create Regular
+Shapes",TRUE
+ggfocus,25932,NA,NA,Scales that Focus Specific Levels in your ggplot(),TRUE
+xmrr,25620,7,TRUE,NA,NA
+ggbuildr,25498,NA,NA,Save Incremental Builds of Plots,TRUE
+cytofan,25386,NA,NA,Plot Fan Plots for Cytometry Data using 'ggplot2',TRUE
+loon.ggplot,24936,NA,NA,A Grammar of Interactive Graphics,TRUE
+ggpath,24752,NA,NA,Robust Image Rendering Support for 'ggplot2',TRUE
+ggimg,24483,53,TRUE,Graphics Layers for Plotting Image Data with 'ggplot2',TRUE
+sportyR,24299,NA,NA,Plot Scaled 'ggplot' Representations of Sports Playing Surfaces,TRUE
+ggnormalviolin,24244,NA,NA,A 'ggplot2' Extension to Make Normal Violin Plots,TRUE
+ggQQunif,24165,8,TRUE,Compare Big Datasets to the Uniform Distribution,TRUE
+ggsolvencyii,23094,NA,NA,A 'ggplot2'-Plot of Composition of Solvency II SCR: SF and IM,TRUE
+ggmice,21751,NA,NA,Visualizations for 'mice' with 'ggplot2',TRUE
+ggrcs,21713,NA,NA,Draw Histograms and Restricted Cubic Splines (RCS),TRUE
+tidyplots,21654,415,TRUE,NA,NA
+ggmulti,21630,NA,NA,High Dimensional Data Visualization,TRUE
+SparseBiplots,20657,NA,NA,"'HJ-Biplot' using Different Ways of Penalization Plotting with
+'ggplot2'",TRUE
+ggBubbles,20306,NA,NA,Mini Bubble Plots for Comparison of Discrete Data with 'ggplot2',TRUE
+ggarchery,19806,32,TRUE,Flexible Segment Geoms with Arrows for 'ggplot2',TRUE
+mdthemes,19260,80,TRUE,NA,NA
+ggip,17622,27,TRUE,Data Visualization for IP Addresses and Networks,TRUE
+gggrid,17588,NA,NA,Draw with 'grid' in 'ggplot2',TRUE
+ggshadow,17160,60,TRUE,Shadow and Glow Geoms for 'ggplot2',TRUE
+ggseg3d,16825,NA,NA,Tri-Surface Mesh Plots for Brain Atlases,TRUE
+ggHoriPlot,16400,144,TRUE,Horizon Plots for 'ggplot2',TRUE
+ggpackets,15852,NA,NA,Package Plot Layers for Easier Portability and Modularization,TRUE
+ggborderline,15701,NA,NA,Line Plots that Pop,TRUE
+figpatch,15410,NA,NA,"Easily Arrange External Figures with Patchwork Alongside
+'ggplot2' Figures",TRUE
+fillpattern,15242,NA,NA,Patterned Fills for 'ggplot2' and 'grid' Graphics,TRUE
+smplot2,15084,NA,NA,"Create Standalone and Composite Plots in 'ggplot2' for
+Publications",TRUE
+gwaRs,15078,NA,NA,"Manhattan, Q-Q, and PCA Plots using 'ggplot2'",TRUE
+tablesgg,14066,NA,NA,"Presentation-Quality Tables, Displayed Using 'ggplot2'",TRUE
+qtl2ggplot,14049,NA,NA,Data Visualization for QTL Experiments,TRUE
+tgamtheme,13940,NA,NA,Globe and Mail Graphics Theme for 'ggplot2',TRUE
+ggstudent,13710,NA,NA,Continuous Confidence Interval Plots using t-Distribution,TRUE
+ggordiplots,13708,NA,NA,Make 'ggplot2' Versions of Vegan's Ordiplots,TRUE
+ggx,13545,151,TRUE,A Natural Language Interface to 'ggplot2',TRUE
+ggnuplot,13158,NA,NA,Make 'ggplot2' Look Like 'gnuplot',TRUE
+gggap,13028,NA,NA,Streamlined Creation of Segments on the Y-Axis of 'ggplot2' Plots,TRUE
+onsvplot,12905,NA,NA,"National Road Safety Observatory (ONSV) Style for 'ggplot2'
+Graphics",TRUE
+gghilbertstrings,12753,NA,NA,A Fast 'ggplot2'-Based Implementation of Hilbert Curves,TRUE
+ggtrendline,12659,NA,NA,Add Trendline and Confidence Interval to 'ggplot',TRUE
+ggtikz,12634,NA,NA,Post-Process 'ggplot2' Plots with 'TikZ' Code Using Plot Coordinates,TRUE
+ggplate,12621,NA,NA,Create Layout Plots of Biological Culture Plates and Microplates,TRUE
+ggcorset,11899,NA,NA,The Corset Plot,TRUE
+ggcleveland,11751,NA,NA,Implementation of Plots from Cleveland's Visualizing Data Book,TRUE
+ggmatplot,11725,NA,NA,Plot Columns of Two Matrices Against Each Other Using 'ggplot2',TRUE
+ggpolar,11403,NA,NA,Dots and Their Connections in Polar Coordinate System,TRUE
+ggalignment,10702,NA,NA,Plots 'D&D'-Style Alignment Charts,TRUE
+ggDoubleHeat,10658,14,TRUE,A Heatmap-Like Visualization Tool,TRUE
+ggsector,10603,4,TRUE,Draw Sectors,TRUE
+gamlss.ggplots,10450,NA,NA,"Plotting Functions for Generalized Additive Model for Location
+Scale and Shape",TRUE
+ggpointless,10425,NA,NA,Additional Geometries and Stats for 'ggplot2',TRUE
+ggbrain,10093,NA,NA,Create Images of Volumetric Brain Data in NIfTI Format Using 'ggplot2' Syntax,TRUE
+ggsurvey,9890,NA,NA,Simplifying 'ggplot2' for Survey Data,TRUE
+ggESDA,9576,21,TRUE,Exploratory Symbolic Data Analysis with 'ggplot2',TRUE
+ggchangepoint,9495,NA,NA,Combines Changepoint Analysis with 'ggplot2',TRUE
+ggDoE,9303,NA,NA,Modern Graphs for Design of Experiments with 'ggplot2',TRUE
+ggpcp,9231,1,TRUE,Parallel Coordinate Plots in the 'ggplot2' Framework,TRUE
+ggfacto,9070,NA,NA,Graphs for Correspondence Analysis,TRUE
+mlbplotR,8971,NA,NA,"Create 'ggplot2' and 'gt' Visuals with Major League Baseball
+Logos",TRUE
+ggtea,8899,NA,NA,Palettes and Themes for 'ggplot2',TRUE
+ggmugs,8854,NA,NA,Visualization of Multiple Genome-Wide Association Study Summary Statistics,TRUE
+ggarrow,8630,54,TRUE,Arrows for 'ggplot2',TRUE
+ggtrace,8605,15,TRUE,Trace and Highlight Groups of Data Points,TRUE
+ggfixest,8490,NA,NA,Dedicated 'ggplot2' Methods for 'fixest' Objects,TRUE
+painbow,8471,NA,NA,"Use XKCD's ""Painbow"" Colormap in ggplot2",TRUE
+ggflowchart,8302,88,TRUE,Flowcharts with 'ggplot2',TRUE
+ggalign,8089,227,TRUE,A 'ggplot2' Extension for Consistent Axis Alignment,TRUE
+ggblend,8009,184,TRUE,Blending and Compositing Algebra for 'ggplot2',TRUE
+ggmapinset,7975,36,TRUE,Add Inset Panels to Maps,TRUE
+ggsankeyfier,7630,NA,NA,Create Sankey and Alluvial Diagrams Using 'ggplot2',TRUE
+ggdaynight,7539,NA,NA,Add Day/Night Patterns to 'ggplot2' Plots,TRUE
+gglgbtq,7484,NA,NA,Show Pride on 'ggplot2' Plots,TRUE
+legendry,7292,211,TRUE,Extended Legends and Axes for 'ggplot2',TRUE
+plotthis,7069,NA,NA,"High-Level Plotting Built Upon 'ggplot2' and Other Plotting
+Packages",TRUE
+ggFishPlots,6988,NA,NA,Visualise and Calculate Life History Parameters for Fisheries Science using 'ggplot2',TRUE
+ggredist,6795,NA,NA,"Scales, Geometries, and Extensions of 'ggplot2' for Election Mapping",TRUE
+oblicubes,6739,20,TRUE,NA,NA
+ggsurveillance,6437,NA,NA,Tools for Outbreak Investigation/Infectious Disease Surveillance,TRUE
+ggsmc,6128,NA,NA,Visualising Output from Sequential Monte Carlo Samplers and Ensemble-Based Methods,TRUE
+ggtricks,6055,NA,NA,Create Sector and Other Charts Easily Using Grammar of Graphics,TRUE
+ggbrace,5716,NA,NA,Curly Braces for 'ggplot2',TRUE
+ggragged,5676,35,TRUE,Ragged Grids for 'ggplot2',TRUE
+ggrounded,5504,NA,NA,Rounded Bar Plots,TRUE
+flowmapper,5481,NA,NA,"Draw Flows (Migration, Goods, Money, Information) on 'ggplot2'
+Plots",TRUE
+gghdx,5280,NA,NA,"HDX Theme, Scales, and Other Conveniences for 'ggplot2'",TRUE
+unhcrthemes,5256,NA,NA,UNHCR 'ggplot2' Theme and Colour Palettes,TRUE
+ggscidca,5241,NA,NA,Plotting Decision Curve Analysis with Coloured Bars,TRUE
+ggreveal,5200,33,TRUE,Reveal a 'ggplot' Incrementally,TRUE
+stevethemes,5104,NA,NA,Steve's 'ggplot2' Themes and Related Theme Elements,TRUE
+gggenomes,4997,641,TRUE,A Grammar of Graphics for Comparative Genomics,TRUE
+gghist,4984,NA,NA,Plot the Histogram of a Numeric Vector,TRUE
+tinythemes,4941,NA,NA,Lightweight Repackaging of 'Themes' for 'ggplot2',TRUE
+layer,4874,NA,NA,Tilt your Maps and Turn Them into 'ggplot' Plots,TRUE
+RGraphSpace,4747,NA,NA,A Lightweight Interface Between 'ggplot2' and 'igraph' Objects,TRUE
+gglogger,4535,NA,NA,Track 'ggplot2' Calls,TRUE
+ggScatRidges,4531,NA,NA,Scatter Plot Combined with Ridgelines in 'ggplot2',TRUE
+ggvolcano,4492,NA,NA,Publication-Ready Volcano Plots,TRUE
+tidyEdSurvey,4423,NA,NA,Integration of 'dplyr' and 'ggplot2' with 'EdSurvey',TRUE
+ggview,4297,NA,NA,'ggplot2' Picture Previewer,TRUE
+ipeaplot,4193,NA,NA,Add Ipea Editorial Standards to 'ggplot2' Graphics,TRUE
+ggautomap,4091,NA,NA,Create Maps from a Column of Place Names,TRUE
+ggaligner,4044,NA,NA,Visualizing Sequence Alignment by Generating Publication-Ready Plots,TRUE
+ggRtsy,3953,NA,NA,Add Some Van Gogh Colors and Overlay Colors on Your 'ggplot()',TRUE
+ggthemeUL,3721,NA,NA,A 'ggplot' Theme for University of Ljubljana,TRUE
+ggpca,3468,2,TRUE,"Publication-Ready PCA, t-SNE, and UMAP Plots",TRUE
+ggtibble,3337,NA,NA,Create Tibbles and Lists of 'ggplot' Figures for Reporting,TRUE
+ggsem,3186,NA,NA,Interactively Visualize Structural Equation Modeling Diagrams,TRUE
+ggbrick,3099,NA,NA,Waffle Style Chart with a Brick Layout in 'ggplot2',TRUE
+ggfields,3004,NA,NA,Add Vector Field Layers to Ggplots,TRUE
+ggfoundry,2658,17,TRUE,Shape Foundry & Geom for 'ggplot2',TRUE
+ggspark,2580,NA,NA,'ggplot2' Functions to Create Tufte Style Sparklines,TRUE
+ggfigdone,2536,NA,NA,Manage & Modify 'ggplot' Figures using 'ggfigdone',TRUE
+ggmapcn,2050,NA,NA,Customizable China Map Visualizations,TRUE
+ggcompare,1921,NA,NA,Mean Comparison in 'ggplot2',TRUE
+ggstackplot,1799,NA,NA,Create Overlapping Stacked Plots,TRUE
+gg1d,1555,NA,NA,Exploratory Data Analysis using Tiled One-Dimensional Graphics,TRUE
+ggtaxplot,1492,NA,NA,Create Plots to Visualize Taxonomy,TRUE
+ggfootball,1347,NA,NA,Plotting Expected Goals (xG) Stats with 'Understat' Data,TRUE
+ggbraid,1267,81,TRUE,NA,NA
+gg3D,NA,104,TRUE,NA,NA
+gganatogram,NA,383,TRUE,NA,NA
+ggtech,NA,393,TRUE,NA,NA
+ggradar,NA,340,TRUE,NA,NA
+ggtree,NA,858,TRUE,NA,NA
+ggthemr,NA,898,TRUE,NA,NA
+ggpirate,NA,26,TRUE,NA,NA
+humapr,NA,9,TRUE,NA,NA
+econocharts,NA,252,TRUE,NA,NA
+ggchromatic,NA,13,TRUE,NA,NA
+ggtranscript,NA,135,TRUE,NA,NA
+ggterror,NA,0,TRUE,NA,NA
+ggmagnify,NA,278,TRUE,NA,NA
+ggoutlierscatterplot,NA,4,TRUE,NA,NA
+ggautothemes,NA,2,TRUE,NA,NA
+eheat,NA,12,TRUE,NA,NA
