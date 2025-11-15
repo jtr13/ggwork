@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.8.26">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -74,7 +74,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-bea47917590963cc22687f04a70f58a8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-cc5abe4197aecc2d56ceb4b9eccde461.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-ef679ea4148e8344264ccc99be51bc40.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -131,9 +131,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
-      <a href="./index.html" class="sidebar-logo-link">
-      </a>
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">TITLE</a> 
         <div class="sidebar-tools-main">
@@ -344,12 +342,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(cran_packages)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>      package downloads
-1      gg.gap     46788
-2        gg1d      2203
-3     ggalign     11304
-4   ggaligner      4467
-5 ggalignment     11456
-6     ggallin     39341
+1      gg.gap     46906
+2        gg1d      2236
+3     ggalign     11415
+4   ggaligner      4491
+5 ggalignment     11501
+6     ggallin     39403
                                                            description CRAN
 1                              Define Segments in y-Axis for 'ggplot2' TRUE
 2       Exploratory Data Analysis using Tiled One-Dimensional Graphics TRUE
@@ -384,12 +382,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code># A tibble: 6 × 6
   package  downloads stars gallery description                             CRAN 
   &lt;chr&gt;        &lt;dbl&gt; &lt;dbl&gt; &lt;lgl&gt;   &lt;chr&gt;                                   &lt;lgl&gt;
-1 ggplot2  171917983    NA FALSE   Create Elegant Data Visualisations Usi… TRUE 
-2 ggrepel   25656072  1228 TRUE    Automatically Position Non-Overlapping… TRUE 
-3 cowplot   20665421   712 TRUE    Streamlined Plot Theme and Plot Annota… TRUE 
-4 ggpubr    17876076  1154 TRUE    'ggplot2' Based Publication Ready Plots TRUE 
-5 ggsci     13288896   676 TRUE    Scientific Journal and Sci-Fi Themed C… TRUE 
-6 ggsignif  13109228   597 TRUE    Significance Brackets for 'ggplot2'     TRUE </code></pre>
+1 ggplot2  172442197    NA FALSE   Create Elegant Data Visualisations Usi… TRUE 
+2 ggrepel   25761024  1228 TRUE    Automatically Position Non-Overlapping… TRUE 
+3 cowplot   20784726   712 TRUE    Streamlined Plot Theme and Plot Annota… TRUE 
+4 ggpubr    17950175  1154 TRUE    'ggplot2' Based Publication Ready Plots TRUE 
+5 ggsci     13350311   676 TRUE    Scientific Journal and Sci-Fi Themed C… TRUE 
+6 ggsignif  13158719   597 TRUE    Significance Brackets for 'ggplot2'     TRUE </code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>gallery_ts <span class="ot">&lt;-</span> <span class="fu">readLines</span>(<span class="st">"generated_data/gallery_packages.csv"</span>, <span class="at">n =</span> <span class="dv">1</span>)</span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>cran_ts <span class="ot">&lt;-</span> <span class="fu">readLines</span>(<span class="st">"generated_data/cran_packages.csv"</span>, <span class="at">n =</span> <span class="dv">1</span>)</span>
